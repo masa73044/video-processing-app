@@ -1,0 +1,69 @@
+[debug] [2023-08-02T06:32:34.961Z] ----------------------------------------------------------------------
+[debug] [2023-08-02T06:32:34.964Z] Command:       /Users/masaCoding/.nvm/versions/node/v16.16.0/bin/node /Users/masaCoding/.nvm/versions/node/v16.16.0/bin/firebase init functions
+[debug] [2023-08-02T06:32:34.964Z] CLI Version:   12.4.6
+[debug] [2023-08-02T06:32:34.964Z] Platform:      darwin
+[debug] [2023-08-02T06:32:34.965Z] Node Version:  v16.16.0
+[debug] [2023-08-02T06:32:34.966Z] Time:          Wed Aug 02 2023 13:32:34 GMT+0700 (Indochina Time)
+[debug] [2023-08-02T06:32:34.966Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-02T06:32:34.974Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-02T06:32:34.974Z] > authorizing via signed-in user (masa7304@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/masaCoding/codingMain/projects/video-processing-app/api-service
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-02T06:32:36.542Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-08-02T06:32:37.461Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-08-02T06:32:37.461Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project video-cloud-50e33 (video-cloud) 
+[info] 
+=== Functions Setup
+[debug] [2023-08-02T06:32:39.439Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-02T06:32:39.439Z] > authorizing via signed-in user (masa7304@gmail.com)
+[debug] [2023-08-02T06:32:39.439Z] [iam] checking project video-cloud-50e33 for permissions ["firebase.projects.get"]
+[debug] [2023-08-02T06:32:39.440Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/video-cloud-50e33:testIamPermissions [none]
+[debug] [2023-08-02T06:32:39.440Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/video-cloud-50e33:testIamPermissions x-goog-quota-user=projects/video-cloud-50e33
+[debug] [2023-08-02T06:32:39.440Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/video-cloud-50e33:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-02T06:32:40.732Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/video-cloud-50e33:testIamPermissions 200
+[debug] [2023-08-02T06:32:40.732Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/video-cloud-50e33:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-08-02T06:32:40.733Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/video-cloud-50e33/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-08-02T06:32:40.733Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/video-cloud-50e33/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/video-cloud-50e33
+[debug] [2023-08-02T06:32:40.734Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/video-cloud-50e33/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-08-02T06:32:40.734Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/video-cloud-50e33/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/video-cloud-50e33
+[debug] [2023-08-02T06:32:41.422Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/video-cloud-50e33/services/runtimeconfig.googleapis.com 200
+[debug] [2023-08-02T06:32:41.422Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/video-cloud-50e33/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-08-02T06:32:42.429Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/video-cloud-50e33/services/cloudfunctions.googleapis.com 200
+[debug] [2023-08-02T06:32:42.429Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/video-cloud-50e33/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[info] ✔  Wrote videocloud/package.json 
+[info] ✔  Wrote videocloud/.eslintrc.js 
+[info] ✔  Wrote videocloud/tsconfig.json 
+[info] ✔  Wrote videocloud/tsconfig.dev.json 
+[info] ✔  Wrote videocloud/src/index.ts 
+[info] ✔  Wrote videocloud/.gitignore 
