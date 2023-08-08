@@ -1,4 +1,4 @@
-# Monkey Media Manager <img src="assets/logo-main.png" alt="logo-main" title="logo-main" align="center" height="180" />
+# Monkey Media <img src="assets/logo-main.png" alt="logo-main" title="logo-main" align="center" height="180" />
 
 ## Technologies
 
