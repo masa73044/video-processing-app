@@ -8,6 +8,7 @@ import styles from "./navbar.module.css";
 import SignIn from "./sign-in";
 import { onAuthStateChangedHelper } from "../firebase/firebase";
 import { User } from "firebase/auth";
+import Upload from "./upload";
 
 export default function Navbar() {
   const [user, setUser] = useState<User | null>(null);
@@ -26,6 +27,7 @@ export default function Navbar() {
       <Link href="/">
         <Image width={90} height={50} src="/logo.svg" alt="Logo" />
       </Link>
+      {user && <Upload />}
       <SignIn user={user} />
     </nav>
   );
