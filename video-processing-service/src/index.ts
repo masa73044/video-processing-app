@@ -43,7 +43,7 @@ app.post("/process-video", async (req, res) => {
       .status(400)
       .send("Bad Request: video already processing or processed");
   } else {
-    setVideo(videoId, {
+    await setVideo(videoId, {
       id: videoId,
       uid: videoId.split("-")[0],
       status: "processing",
