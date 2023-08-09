@@ -7,15 +7,17 @@ import {
   User,
 } from "firebase/auth";
 import { getFunctions } from "firebase/functions";
+require('dotenv').config();
+
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBqykLYlN3UKGp4_NSW9GPUIrspH31_kRE",
-  authDomain: "video-cloud-50e33.firebaseapp.com",
-  projectId: "video-cloud-50e33",
-  storageBucket: "video-cloud-50e33.appspot.com",
-  messagingSenderId: "1017696941693",
-  appId: "1:1017696941693:web:6df44dcac8671f63e6e314",
-  measurementId: "G-0DE08TN2XL",
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
