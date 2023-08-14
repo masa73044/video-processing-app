@@ -2,6 +2,7 @@ import styles from "./page.module.css";
 import { getVideos } from "./firebase/functions";
 import Link from "next/link";
 import Image from "next/image";
+import Test from "./new-app/page";
 
 export default async function Home() {
   const videos = await getVideos();
@@ -19,6 +20,7 @@ export default async function Home() {
           />
         </Link>
       ))}
+      <Link href={`/new-app`}></Link>
     </main>
   );
 }
