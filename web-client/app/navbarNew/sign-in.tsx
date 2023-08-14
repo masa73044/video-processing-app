@@ -12,11 +12,11 @@ export default function SignIn({ user }: SignInprops) {
   return (
     <Fragment>
       {user ? (
-        <button className={styles.signin} onClick={signOut}>
+        <button className="nav-link scrollto" onClick={signOut}>
           Sign Out
         </button>
       ) : (
-        <button className={styles.signin} onClick={signInWithGoogle}>
+        <button className="nav-link scrollto" onClick={signInWithGoogle}>
           Sign In
         </button>
       )}

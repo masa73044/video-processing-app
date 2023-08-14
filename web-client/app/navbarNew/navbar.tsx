@@ -66,7 +66,7 @@ export default function Navbar() {
               </li>
               <li>
                 <a className="nav-link scrollto" href="#contact">
-                  Login
+                  <SignIn user={user} />
                 </a>
               </li>
             </ul>
@@ -78,7 +78,6 @@ export default function Navbar() {
         <Link href="/">
           <Image width={90} height={50} src="/logo.svg" alt="Logo" />
         </Link>
-        <SignIn user={user} />
       </nav>
     </>
   );
