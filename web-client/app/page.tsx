@@ -47,7 +47,6 @@ export default async function Home() {
                 </div>
               </div>
             ))}
-            <Link href={`/new-app`}></Link>
           </div>
         </div>
       </section>
