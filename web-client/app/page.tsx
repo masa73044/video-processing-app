@@ -41,7 +41,7 @@ export default async function Home() {
                     <div className="social"></div>
                   </div>
                   <div className="member-info">
-                    <h4>Video 1</h4>
+                    <h4>{video.uid}</h4>
                     <span>User1</span>
                   </div>
                 </div>
