@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 // import Navbar from "./navbar/navbar";
 import Navbar from "./navbarNew/navbar";
+import Features from "./features/features";
 import "./assets/vendor/aos/aos.css";
 import "./assets/vendor/bootstrap/css/bootstrap.min.css";
 import "./assets/vendor/bootstrap-icons/bootstrap-icons.css";
@@ -51,6 +52,7 @@ export default function RootLayout({
           </div>
         </section>
         {children}
+        <Features />
       </body>
     </html>
   );

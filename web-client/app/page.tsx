@@ -15,7 +15,44 @@ export default async function Home() {
 
   return (
     <main>
-      {videos.map((video) => (
+      <section id="team" className="team section-bg">
+        <div className="container">
+          <div className="section-title">
+            <h2>Videos</h2>
+            <p></p>
+          </div>
+          <div className="row">
+            {videos.map((video) => (
+              <div
+                className="col-lg-3 col-md-6 d-flex align-items-stretch"
+                data-aos-delay="100"
+              >
+                <div className="member">
+                  <div className="member-img">
+                    <Link href={`/watch?v=${video.filename}`}>
+                      <Image
+                        src={"/thumbnail.png"}
+                        alt="video"
+                        width={120}
+                        height={80}
+                        className={styles.thumbnail}
+                      />
+                    </Link>
+                    <div className="social"></div>
+                  </div>
+                  <div className="member-info">
+                    <h4>Video 1</h4>
+                    <span>User1</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+            <Link href={`/new-app`}></Link>
+          </div>
+        </div>
+      </section>
+
+      {/* {videos.map((video) => (
         <Link href={`/watch?v=${video.filename}`}>
           <Image
             src={"/thumbnail.png"}
@@ -26,7 +63,7 @@ export default async function Home() {
           />
         </Link>
       ))}
-      <Link href={`/new-app`}></Link>
+      <Link href={`/new-app`}></Link> */}
     </main>
   );
 }
