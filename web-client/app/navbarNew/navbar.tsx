@@ -74,11 +74,6 @@ export default function Navbar() {
           </nav>
         </div>
       </header>
-      <nav className={styles.nav}>
-        <Link href="/">
-          <Image width={90} height={50} src="/logo.svg" alt="Logo" />
-        </Link>
-      </nav>
     </>
   );
 }
