@@ -2,7 +2,7 @@
 
  <img src="assets/logo-main.png" alt="logo-main" title="logo-main" align="center" height="180" />
 
-Welcome to Media Monkey - your media hub for video and audio processing, uploading, and viewing.
+Welcome to Media Monkey - your media hub for video processing, uploading, and viewing.
 Files are all stored securely through the Google Cloud Platform.
 
 # Features
