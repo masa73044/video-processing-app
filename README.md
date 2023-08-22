@@ -15,11 +15,13 @@ Files are all stored securely through the Google Cloud Platform.
 
 # Features
 
-- Cloud Based Video Platform: Harnessing the capabilities of Google Cloud coupled with Firebase's agility, Media Monkey has high quality upload speeds, fortified security, and instantaneous access to your valuable media assets.
-
-- Elegant Playback Interface: A confluence of aesthetic design principles and user-centricity, our playback interface ensures your audiences experience media the way it's meant to be – pristine and immersive.
+- Cloud Based Video Platform: Harnessing the capabilities of Google Cloud coupled with Firebase's agility, Media Monkey has high quality upload speeds, fortified security, and instantaneous access to your media assets.
 
   <br>
+
+  <img src="assets/display1.png" alt="Dashboard Screenshot" title="Dashboard" width="600" />
+    <img src="assets/display3.png" alt="Dashboard Screenshot" title="Dashboard" width="600" />
+      <img src="assets/display2.png" alt="Dashboard Screenshot" title="Dashboard" width="600" />
 
 # Installation
 
